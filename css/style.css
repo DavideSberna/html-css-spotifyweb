@@ -236,6 +236,12 @@ main #container-right .row-fix{
     main #container-left{
         width: 50px;
     }
+    main #container-right{
+        width: calc(100% - 50px);
+    }
+    main #container-right .row-fix{
+        width: calc(100% - 50px);
+    }
     
     
 }
@@ -261,6 +267,15 @@ main #container-right .row-fix{
     }
     #col-popolari .card-contain{
         width: 100%;
+    }
+    main #container-left{
+        width: 50px;
+    }
+    main #container-right{
+        width: calc(100% - 50px);
+    }
+    main #container-right .row-fix{
+        width: calc(100% - 50px);
     }
     
 }
