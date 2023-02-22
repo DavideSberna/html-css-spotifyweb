@@ -1,0 +1,266 @@
+:root{
+    --black: #000000;
+    --black-transp: #00000095;
+    --light-black: #141922;
+    --light-gray: #535353;
+    --light-green: #ADFF2F;
+    --gray: #282828;
+    --white: #ffffff;
+    
+    --sz-h1: 2em;
+    --sz-h2: 2em;
+    --sz-h3: 2em;
+    --sz-h4: 2em;
+    --sz-p: 2em;
+    --sz-a: 2em;
+    --sz-icon: 2em;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    color: var(--white);
+}
+a{
+    color: var(--white);
+}
+
+
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--light-black);
+    overflow: hidden;
+}
+
+main{
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color: var(--light-black);
+    display: flex;
+    
+
+}
+.play-bar{
+    width: 100%;
+    height: 80px;
+    background-color: var(--gray);
+}
+
+main #container-left{
+    width: 250px;
+    height: 100%;
+    background-color: var(--black);
+
+}
+main #container-right{
+    width: calc(100% - 250px);
+    height: 100%;
+    background-color: var(--light-black);
+    overflow-y: auto;
+}
+main #container-right .row-fix{
+    width: calc(100% - 250px);
+    position: fixed;
+    right: 0;
+    height: 90px;
+    background-color: var(--black-transp);
+    
+}
+
+
+
+/* display flex settings */
+.d-flex{
+    display: flex;
+}
+.j-center{
+    justify-content: center;
+    align-items: center;
+}
+.s-between{
+    justify-content: space-between;
+}
+.row-wrap{
+    flex-flow: row wrap;
+}
+.j-end{
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+
+/* padding / margin settings */
+.p-L-R-20{
+    padding: 0 20px;
+}
+.p-L-R-10{
+    padding: 0 15px;
+}
+.p-all-10{
+    padding: 20px;
+}
+.p-all-5{
+    padding: 0.5%;
+}
+.p-all-30{
+    padding: 30px;
+}
+.m-T-110{
+    margin-top: 110px;
+}
+
+/* color text / color bg elements */
+.bg-black{
+    background-color: var(--black);
+}
+.bg-light-black{
+    background-color: var(--light-black);
+}
+.bg-gray{
+    background-color: var(--gray);
+}
+.bg-light-gray{
+    background-color: var(--light-gray);
+}
+
+
+.light-gray{
+    color: var(--light-gray);
+}
+.white{
+    color: var(--white);
+}
+.gray{
+    color: var(--gray);
+}
+.black{
+    color: var(--black);
+}
+
+
+/* text position settings */
+.text-center{
+    text-align: center;
+}
+
+
+
+
+/* img size settings */
+.img-100{
+    width: 100%;
+}
+.circle-contain{
+    border-radius: 50%;
+    
+    overflow: hidden;
+}
+.circle{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* card width dimension */
+.card-contain{
+    width: calc(100% / 6);
+    height: calc(100% / 6);
+}
+
+
+
+@media screen and (max-width: 1200px) and (min-width: 993px){
+    
+    #col-recently .d-flex{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    #col-recently .card-contain{
+        width: calc(100% / 4);
+    }
+    #col-pet-te .card-contain{
+        width: calc(100% / 4);
+    }
+    #col-popolari .card-contain{
+        width: calc(100% / 4);
+    }
+    
+    
+}
+@media screen and (max-width: 992px) and (min-width: 769px){
+    
+    #col-recently .d-flex{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    #col-recently .card-contain{
+        width: calc(100% / 2);
+    }
+    #col-pet-te .card-contain{
+        width: calc(100% / 2);
+    }
+    #col-popolari .card-contain{
+        width: calc(100% / 2);
+    }
+    
+}
+@media screen and (max-width: 768px) and (min-width: 576px){
+    
+    #col-recently .d-flex{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    #col-recently .card-contain{
+        width: calc(100% / 2);
+    }
+    #col-pet-te .card-contain{
+        width: calc(100% / 2);
+    }
+    #col-popolari .card-contain{
+        width: calc(100% / 2);
+    }
+    main #container-left{
+        width: 50px;
+    }
+    
+    
+}
+@media screen and (max-width: 575px) and (min-width: 320px){
+    
+    #col-recently .d-flex{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    #col-recently .card-contain{
+        width: 100%;
+    }
+    #col-pet-te .d-flex{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    #col-pet-te .card-contain{
+        width: 100%;
+    }
+    #col-popolari .d-flex{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    #col-popolari .card-contain{
+        width: 100%;
+    }
+    
+}
