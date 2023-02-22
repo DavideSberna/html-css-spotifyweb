@@ -3,6 +3,7 @@
     --black-transp: #00000095;
     --light-black: #141922;
     --light-gray: #535353;
+    --gray-cube: #A3A3A3;
     --light-green: #ADFF2F;
     --gray: #282828;
     --white: #ffffff;
@@ -66,10 +67,20 @@ main{
 
 main #container-left{
     width: 250px;
-    height: 100%;
+    min-height: 600px;
     background-color: var(--black);
-
+    
 }
+main #container-left ul li{
+    padding-top: 20px;
+}
+main #container-left .cube{
+    width: 50px;
+    height: 50px;
+    background-color: var(--gray-cube);  
+}
+
+
 main #container-right{
     width: calc(100% - 250px);
     height: 100%;
@@ -98,6 +109,9 @@ main #container-right .row-fix{
 .s-between{
     justify-content: space-between;
 }
+.s-around{
+    justify-content: space-around;
+}
 .row-wrap{
     flex-flow: row wrap;
 }
@@ -124,6 +138,7 @@ main #container-right .row-fix{
 
 
 
+
 /* padding / margin settings */
 .p-L-R-20{
     padding: 0 20px;
@@ -135,7 +150,7 @@ main #container-right .row-fix{
     padding: 20px;
 }
 .p-all-5{
-    padding: 0.5%;
+    padding: 1rem;
 }
 .p-all-30{
     padding: 30px;
@@ -189,6 +204,9 @@ main #container-right .row-fix{
 
 }
 
+/* overflow settings */
+
+
 
 
 
@@ -209,6 +227,12 @@ main #container-right .row-fix{
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+.svg-logo{
+    width: 200px;
+}
+.svg-icon{
+    width: 30px; 
 }
 
 /* card width dimension */
@@ -272,6 +296,9 @@ main #container-right .row-fix{
     main #container-left{
         width: 50px;
     }
+    main #container-left .remove{
+        display: none;
+    }
     main #container-right{
         width: calc(100% - 50px);
     }
@@ -306,6 +333,9 @@ main #container-right .row-fix{
     }
     main #container-left{
         width: 50px;
+    }
+    main #container-left .remove{
+        display: none;
     }
     main #container-right{
         width: calc(100% - 50px);
