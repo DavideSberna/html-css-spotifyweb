@@ -51,10 +51,17 @@ main{
     
 
 }
-.play-bar{
+#col-play-bar{
     width: 100%;
     height: 80px;
-    background-color: var(--gray);
+    background-color: var(--gray); 
+}
+
+#col-play-bar a{
+    color: white;
+}
+#col-play-bar img{
+    width: 50px;
 }
 
 main #container-left{
@@ -93,6 +100,21 @@ main #container-right .row-fix{
 }
 .row-wrap{
     flex-flow: row wrap;
+}
+.row-nowrap{
+    flex-flow: row nowrap;
+}
+.d-column{
+    flex-direction: column;
+}
+.d-center{
+    align-items: center;
+}
+.d-start{
+    justify-content: flex-start;
+}
+.d-content{
+    align-content: center;
 }
 .j-end{
     justify-content: flex-end;
@@ -155,11 +177,25 @@ main #container-right .row-fix{
 .text-center{
     text-align: center;
 }
+.line-height-40{
+    line-height: 40px;
+}
+.line-height{
+    line-height: 0px;
+}
+.height-100{
+    width: calc(100% / 3);
+    height: 80px;
+
+}
 
 
 
 
 /* img size settings */
+.block{
+    display: block;
+}
 .img-100{
     width: 100%;
 }
@@ -183,7 +219,7 @@ main #container-right .row-fix{
 
 
 
-@media screen and (max-width: 1200px) and (min-width: 993px){
+@media screen and (max-width: 1300px) and (min-width: 993px){
     
     #col-recently .d-flex{
         display: flex;
