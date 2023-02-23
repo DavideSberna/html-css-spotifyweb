@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://kit.fontawesome.com/f795f2978c.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f795f2978c.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,65 +15,65 @@
 <body>
     <div class="wrapper">
         <main>
-            <section id="container-left">
+            <section id="container-left" class="p-L-R-20">
                 <div class="left-top">
                     <div class="">
-                        <div class="">
-                            <div>
+                        <div>
+                            <div class="remove p-T-B-30">
                                 <img class="svg-logo block" src="./img/logo.svg" alt="logo">
                             </div>
-                            <div>
-                                <img class="svg-icon block" src="./img/logo-small.svg" alt="home">
+                            <div class="change-logo">
+                                <img class="svg-icon block m-T-10 m-R-5" src="./img/logo-small.svg" alt="logo-small">
                             </div>
                         </div>
                     </div>
                     <div class="d-flex">
                         <div class="d-flex d-column">
                             <div>
-                                <img class="svg-icon block" src="./img/home.svg" alt="home">
+                                <img class="svg-icon block m-T-10 m-R-5" src="./img/home.svg" alt="home">
                             </div>
                             <div>
-                                <img class="svg-icon block" src="./img/search.svg" alt="search">
+                                <img class="svg-icon block m-T-10 m-R-5" src="./img/search.svg" alt="search">
                             </div>
                             <div>
-                                <img class="svg-icon block" src="./img/libreria.svg" alt="libreria">
+                                <img class="svg-icon block m-T-10 m-R-5" src="./img/libreria.svg" alt="libreria">
                             </div>
                         </div>
                         <div class="d-flex d-column s-around remove">
                             <div>
-                                <p>Home</p>
+                                <p class="s-p m-T-10">Home</p>
                             </div>
                             <div>
-                                <p>Cerca</p>
+                                <p class="s-p m-T-10">Cerca</p>
                             </div>
                             <div>
-                                <p>La tua libreria</p>
+                                <p class="s-p m-T-10">La tua libreria</p>
                             </div>
                         </div>
                     </div>
                     <div>
                         <div class="remove">
                             <div>
-                                <h4>playlist</h4>
+                                <h4 class="s-h4 uppercase m-T-20">Playlist</h4>
                             </div>
-                            <div class="d-flex d-center">
+                            <div class="d-flex d-center m-T-10">
                                 <div class="cube">
                                     <span class="bar"></span>
                                     <span class="bar"></span>
                                 </div>
-                                <div>
-                                    <p>Crea Playlist</p>
+                                <div class="p-T-B-20">
+                                    <p class="s-p">Crea Playlist</p>
                                 </div>
                             </div>
                             <div class="overflow-y">
                                 <ul>
-                                    <li>Nome Playlist</li>
-                                    <li>Nome Playlist</li>
-                                    <li>Nome Playlist</li>
-                                    <li>Nome Playlist</li>
-                                    <li>Nome Playlist</li>
-                                    <li>Nome Playlist</li>
-                                    <li>Nome Playlist</li>
+                                    <li class="s-p">Nome Playlist</li>
+                                    <li class="s-p">Nome Playlist</li>
+                                    <li class="s-p">Nome Playlist</li>
+                                    <li class="s-p">Nome Playlist</li>
+                                    <li class="s-p">Nome Playlist</li>
+                                    <li class="s-p">Nome Playlist</li>
+                                    <li class="s-p">Nome Playlist</li>
                                 </ul>
                             </div>
                         </div>
@@ -83,19 +84,19 @@
                         <div class="d-flex d-column">
                             <div class="d-flex d-center">
                                 <div>
-                                    <img class="svg-icon-small block" src="./img/download.svg" alt="download">
+                                    <img class="svg-icon-small block m-R-5" src="./img/download.svg" alt="download">
                                 </div>
                                 <div class="remove">
-                                    <p>installa app</p>
+                                    <p class="s-p">installa app</p>
                                 </div>
                             </div>
-                            <div class="bar-long"></div>
-                            <div class="d-flex d-center">
-                                <div>
-                                    <img class="svg-icon-small block" src="./img/profile.svg" alt="profile">
+                            <div class="bar-long m-T-B-10"></div>
+                            <div class="d-flex d-center m-B-20">
+                                <div class="cicle-profile m-R-5">
+                                    <img class="svg-icon-small cover block" src="./img/profile.svg" alt="profile">
                                 </div>
-                                <div class="remove">
-                                    <p>John Doe</p>
+                                <div class="">
+                                    <p class="s-p white bolder">John Doe</p>
                                 </div>
                             </div>
                         </div>
@@ -106,8 +107,8 @@
             <section id="container-right">
                 <section>
                     <div class="row-fix d-flex j-end p-L-R-20">
-                        <div>
-                            <a href="">Effettua l'upgrade</a>
+                        <div class="btn">
+                            <a class="uppercase" href="">Effettua l'upgrade</a>
                         </div>
                     </div>
                 </section>
@@ -116,12 +117,12 @@
                         <section>
                             <div>
                                 <ul class="d-flex j-center row-wrap">
-                                    <li class="p-L-R-10"><a href="#">in evidenza</a></li>
-                                    <li class="p-L-R-10"><a href="#">podcast</a></li>
-                                    <li class="p-L-R-10"><a href="#">classifiche</a></li>
-                                    <li class="p-L-R-10"><a href="#">generi e mood</a></li>
-                                    <li class="p-L-R-10"><a href="#">nuove uscite</a></li>
-                                    <li class="p-L-R-10"><a href="#">scopri</a></li>
+                                    <li class="p-L-R-10 p-B-15 uppercase"><a href="#">in evidenza</a></li>
+                                    <li class="p-L-R-10 p-B-15 uppercase"><a href="#">podcast</a></li>
+                                    <li class="p-L-R-10 p-B-15 uppercase"><a href="#">classifiche</a></li>
+                                    <li class="p-L-R-10 p-B-15 uppercase"><a href="#">generi e mood</a></li>
+                                    <li class="p-L-R-10 p-B-15 uppercase"><a href="#">nuove uscite</a></li>
+                                    <li class="p-L-R-10 p-B-15 uppercase"><a href="#">scopri</a></li>
                                 </ul>
                             </div>
                         </section>
@@ -131,7 +132,7 @@
                     <div class="">
                         <div>
                             <div class="p-all-5">
-                                <h3>Recently played</h3>
+                                <h3 class="s-h3">Recently played</h3>
                             </div>
                             <div class="d-flex">
                                 <div class="card-contain p-all-5">
@@ -141,9 +142,9 @@
                                                 <img class="img-100" src="./img/stranger.jpeg" alt="stranger">
                                             </div>
                                             <div class="text-center">
-                                                <h4>Heavy Metal</h4>
+                                                <h4 class="s-h4">Heavy Metal</h4>
                                                 <div>
-                                                    <p>Subtitle</p>
+                                                    <p class="s-p">Subtitle</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -156,9 +157,9 @@
                                                 <img class="img-100" src="./img/stranger.jpeg" alt="stranger">
                                             </div>
                                             <div class="text-center">
-                                                <h4>Heavy Metal</h4>
+                                                <h4 class="s-h4">Heavy Metal</h4>
                                                 <div>
-                                                    <p>Subtitle</p>
+                                                    <p class="s-p">Subtitle</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -171,9 +172,9 @@
                                                 <img class="img-100" src="./img/stranger.jpeg" alt="stranger">
                                             </div>
                                             <div class="text-center">
-                                                <h4>Heavy Metal</h4>
+                                                <h4 class="s-h4">Heavy Metal</h4>
                                                 <div>
-                                                    <p>Subtitle</p>
+                                                    <p class="s-p">Subtitle</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -186,9 +187,9 @@
                                                 <img class="img-100" src="./img/stranger.jpeg" alt="stranger">
                                             </div>
                                             <div class="text-center">
-                                                <h4>Heavy Metal</h4>
+                                                <h4 class="s-h4">Heavy Metal</h4>
                                                 <div>
-                                                    <p>Subtitle</p>
+                                                    <p class="s-p">Subtitle</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -201,9 +202,9 @@
                                                 <img class="img-100" src="./img/stranger.jpeg" alt="stranger">
                                             </div>
                                             <div class="text-center">
-                                                <h4>Heavy Metal</h4>
+                                                <h4 class="s-h4">Heavy Metal</h4>
                                                 <div>
-                                                    <p>Subtitle</p>
+                                                    <p class="s-p">Subtitle</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -216,14 +217,14 @@
                                                 <img class="img-100" src="./img/stranger.jpeg" alt="stranger">
                                             </div>
                                             <div class="text-center">
-                                                <h4>Heavy Metal</h4>
+                                                <h4 class="s-h4">Heavy Metal</h4>
                                                 <div>
-                                                    <p>Subtitle</p>
+                                                    <p class="s-p">Subtitle</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>  
+                                </div> 
                             </div>
                         </div>
                     </div>
@@ -233,8 +234,8 @@
                     <div class="">
                         <div>
                             <div class="p-all-5">
-                                <h3>Creato per John Doe</h3>
-                                <p>Più ascolti, più saranno accurati i tuoi suggerimenti</p>
+                                <h3 class="s-h3">Creato per John Doe</h3>
+                                <p class="s-p">Più ascolti, più saranno accurati i tuoi suggerimenti</p>
                             </div>
                             <div class="d-flex">
                                 <div class="card-contain p-all-5">
@@ -244,7 +245,7 @@
                                                 <img class="img-100" src="./img/stranger.jpeg" alt="stranger">
                                             </div>
                                             <div class="text-center">
-                                                <h4>Heavy Metal</h4>
+                                                <h4 class="s-h4">Heavy Metal</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -256,7 +257,7 @@
                                                 <img class="img-100" src="./img/stranger.jpeg" alt="stranger">
                                             </div>
                                             <div class="text-center">
-                                                <h4>Heavy Metal</h4>
+                                                <h4 class="s-h4">Heavy Metal</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -270,8 +271,8 @@
                     <div class="">
                         <div>
                             <div class="p-all-5">
-                                <h3>Artisti più popolari</h3>
-                                <p>Più ascolti, più saranno accurati i tuoi suggerimenti</p>
+                                <h3 class="s-h3">Artisti più popolari</h3>
+                                <p class="s-p">Più ascolti, più saranno accurati i tuoi suggerimenti</p>
                             </div>
                             <div class="d-flex">
                                 <div class="card-contain p-all-5">
@@ -281,7 +282,7 @@
                                                 <img class="img-100 circle" src="./img/stranger.jpeg" alt="stranger">
                                             </div>
                                             <div class="text-center">
-                                                <h4>Heavy Metal</h4>
+                                                <h4 class="s-h4">Heavy Metal</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -293,7 +294,7 @@
                                                 <img class="img-100 circle" src="./img/stranger.jpeg" alt="stranger">
                                             </div>
                                             <div class="text-center">
-                                                <h4>Heavy Metal</h4>
+                                                <h4 class="s-h4">Heavy Metal</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -302,69 +303,68 @@
                         </div>
                     </div>
                 </section>
-                
             </section>
         </main>
 
         <footer>
             <section id="col-play-bar">
                 <div class="">
-                    <div class="d-flex s-between d-center">
-                        <div class="d-flex j-start d-center height-100">
+                    <div class="d-flex s-between d-center p-L-R-20">
+                        <div class="d-flex j-start d-center height-100 remove">
                             <div class="d-flex d-center">
                                 <div>
                                     <img class="block" src="./img/sinister.jpeg" alt="sinister">
                                 </div>
-                                <div class="">
-                                    <p>Sinister</p>
-                                    <p>Brano nome</p>
+                                <div class="p-L-R-20">
+                                    <p class="s-p-big bolder white">Sinister</p>
+                                    <p class="s-p">Brano nome</p>
                                 </div>
                             </div>
                             <div>
-                                <a href="#">A</a>
-                                <a href="#">A</a>
+                                <a href="#"><i class="fa-regular fa-heart p-L-R s-icon"></i></a>
+                                <a href="#"><i class="fa-regular fa-folder p-L-R s-icon"></i></a>
                             </div>
                         </div>
                         <div class="d-flex d-column j-center height-100">
-                            <div class="d-flex d-center">
+                            <div class="d-flex j-center">
                                 <div>
-                                    <p>0.25</p>
+                                    <a href="#"><i class="fa-solid fa-share p-L-R s-icon"></i></a>
                                 </div>
                                 <div>
-                                    <input type="range" name="" id="range-large">
+                                    <a href="#"><i class="fa-solid fa-pause p-L-R s-icon"></i></a>
                                 </div>
                                 <div>
-                                    <p>4:35</p>
+                                    <a href="#"><i class="fa-regular fa-circle-play p-L-R s-icon-big"></i></a>
+                                </div>
+                                <div>
+                                    <a href="#"><i class="fa-solid fa-pause p-L-R s-icon"></i></a>
+                                </div>
+                                <div>
+                                    <a href="#"><i class="fa-solid fa-arrow-rotate-left p-L-R s-icon"></i></a>
                                 </div>
                             </div>
-                            <div class="d-flex">
+                            <div class="d-flex width-100 width-80 j-center">
                                 <div>
-                                    <a href="#">S</a>
+                                    <p class="s-p-small white">0.25</p>
+                                </div>
+                                <div class="width-100">
+                                    <input type="range" name="" id="range-large" class="width-100">
                                 </div>
                                 <div>
-                                    <a href="#">L</a>
-                                </div>
-                                <div>
-                                    <a href="#">C</a>
-                                </div>
-                                <div>
-                                    <a href="#">R</a>
-                                </div>
-                                <div>
-                                    <a href="#">Z</a>
+                                    <p class="s-p-small white">4:35</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex j-end height-100">
+                        <div class="d-flex j-end height-100 remove">
                             <div class="d-flex d-center">
                                 <div>
-                                    <a href="#">B</a>
+                                    <a href="#"><i class="fa-solid fa-list-ul p-L-R s-icon"></i></a>
                                 </div>
                                 <div>
-                                    <a href="#">B</a>
+                                    <a href="#"><i class="fa-solid fa-tv p-L-R s-icon"></i></a>
                                 </div>
                                 <div>
-                                    <a href="#">B</a>
+                                    <a href="#"><i class="fa-solid fa-volume-high p-L-R s-icon"></i></a>
                                 </div>
                                 <div>
                                     <input type="range" name="" id="range-short">
