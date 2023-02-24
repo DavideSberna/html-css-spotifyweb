@@ -179,6 +179,9 @@ main #container-right .row-fix{
 .p-L-R-20{
     padding: 0 20px;
 }
+.p-L-18{
+    padding-left: 20px;
+}
 .p-L-R-10{
     padding: 0 15px;
 }
@@ -621,5 +624,18 @@ main #container-right .row-fix{
         height: 40px;
         object-position: -8px 50%;
     }
+    /* #container-left .padding{
+        padding: 0;
+    } */
     
+}
+
+@media screen and (max-height: 170px){
+    .row-fix{
+        display: none;
+    }
+    #container-left{
+        display: none;
+    }
+ 
 }
