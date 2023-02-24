@@ -29,51 +29,50 @@
                     </div>
                     <div class="d-flex">
                         <div class="d-flex d-column">
-                            <div>
-                                <img class="svg-icon block m-T-10 m-R-5" src="./img/home.svg" alt="home">
+                            <div class="m-T-10">
+                                <img class="svg-icon block m-R-5" src="./img/home.svg" alt="home">
                             </div>
-                            <div>
-                                <img class="svg-icon block m-T-10 m-R-5" src="./img/search.svg" alt="search">
+                            <div class="m-T-10">
+                                <img class="svg-icon block m-R-5" src="./img/search.svg" alt="search">
                             </div>
-                            <div>
-                                <img class="svg-icon block m-T-10 m-R-5" src="./img/libreria.svg" alt="libreria">
+                            <div class="m-T-10">
+                                <img class="svg-icon block m-R-5" src="./img/libreria.svg" alt="libreria">
                             </div>
                         </div>
-                        <div class="d-flex d-column s-around remove">
-                            <div>
-                                <p class="s-p m-T-10">Home</p>
+                        <div id="home" class="d-flex d-column s-around remove">
+                            <div class="m-T-10">
+                                <a href="#" class="s-p">Home</a>
                             </div>
-                            <div>
-                                <p class="s-p m-T-10">Cerca</p>
+                            <div class="m-T-10">
+                                <a href="#" class="s-p">Cerca</a>
                             </div>
-                            <div>
-                                <p class="s-p m-T-10">La tua libreria</p>
+                            <div class="m-T-10">
+                                <a href="#" class="s-p">La tua libreria</a>
                             </div>
                         </div>
                     </div>
-                    <div class="remove over-hidden W-H-100">
+                    <div id="play-list" class="remove over-hidden W-H-100">
                         <div class="remove over-hidden W-H-100">
                             <div>
                                 <h4 class="s-h4 uppercase m-T-30">Playlist</h4>
                             </div>
-                            <div class="d-flex d-center m-T-10">
-                                <div class="cube m-R-5">
-                                    <span class="bar"></span>
-                                    <span class="bar"></span>
+                            <div class="play d-flex d-center m-T-10">
+                                <div class="cube m-R-5 d-flex j-center bg-gray-cube">
+                                    <a href="#"><i class="fa-solid fa-plus black s-h4"></i></a>
                                 </div>
                                 <div class="">
-                                    <p class="s-p">Crea Playlist</p>
+                                    <a class="s-p" href="#">Crea Playlist</a>
                                 </div>
                             </div>
                             <div class="over-hidden W-H-100">
                                 <ul class="over-auto">
-                                    <li class="s-p">Nome Playlist</li>
-                                    <li class="s-p">Nome Playlist</li>
-                                    <li class="s-p">Nome Playlist</li>
-                                    <li class="s-p">Nome Playlist</li>
-                                    <li class="s-p">Nome Playlist</li>
-                                    <li class="s-p">Nome Playlist</li>
-                                    <li class="s-p">Nome Playlist</li>
+                                    <li><a class="s-p" href="#">Nome Playlist</a></li>
+                                    <li><a class="s-p" href="#">Nome Playlist</a></li>
+                                    <li><a class="s-p" href="#">Nome Playlist</a></li>
+                                    <li><a class="s-p" href="#">Nome Playlist</a></li>
+                                    <li><a class="s-p" href="#">Nome Playlist</a></li>
+                                    <li><a class="s-p" href="#">Nome Playlist</a></li>
+                                    <li><a class="s-p" href="#">Nome Playlist</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -82,21 +81,21 @@
                 <div class="left-bottom d-flex d-flex-end">
                     <div class="over-hidden W-H-100">
                         <div class="d-flex d-column over-hidden W-H-100">
-                            <div class="d-flex d-center">
+                            <div class="download d-flex d-center">
                                 <div class="cicle-dw m-R-5">
                                     <img class="svg-icon-small change block" src="./img/download.svg" alt="download">
                                 </div>
                                 <div class="remove">
-                                    <p class="s-p">installa app</p>
+                                    <a class="s-p" href="#">installa app</a>
                                 </div>
                             </div>
                             <div class="bar-long m-T-B-10 remove"></div>
-                            <div class="d-flex d-center m-B-20">
+                            <div class="profile d-flex d-center m-B-20">
                                 <div class="cicle-profile m-R-5">
                                     <img class="svg-icon block obj-center" src="./img/profile.svg" alt="profile">
                                 </div>
                                 <div class="remove">
-                                    <p class="s-p white bolder">John Doe</p>
+                                    <a href="#" class="s-p white bolder">John Doe</a>
                                 </div>
                             </div>
                         </div>
@@ -108,7 +107,7 @@
                 <section>
                     <div class="row-fix d-flex j-end p-L-R-20">
                         <div class="btn">
-                            <a class="uppercase" href="">Effettua l'upgrade</a>
+                            <a class="uppercase white" href="">Effettua l'upgrade</a>
                         </div>
                     </div>
                 </section>
@@ -117,12 +116,12 @@
                         <section>
                             <div>
                                 <ul class="d-flex j-center row-wrap">
-                                    <li class="p-L-R-10 p-B-15 uppercase"><a href="#">in evidenza</a></li>
-                                    <li class="p-L-R-10 p-B-15 uppercase"><a href="#">podcast</a></li>
-                                    <li class="p-L-R-10 p-B-15 uppercase"><a href="#">classifiche</a></li>
-                                    <li class="p-L-R-10 p-B-15 uppercase"><a href="#">generi e mood</a></li>
-                                    <li class="p-L-R-10 p-B-15 uppercase"><a href="#">nuove uscite</a></li>
-                                    <li class="p-L-R-10 p-B-15 uppercase"><a href="#">scopri</a></li>
+                                    <li class="p-L-R-10 p-B-15 uppercase"><a class="light-gray" href="#">in evidenza</a></li>
+                                    <li class="p-L-R-10 p-B-15 uppercase"><a class="light-gray" href="#">podcast</a></li>
+                                    <li class="p-L-R-10 p-B-15 uppercase"><a class="light-gray" href="#">classifiche</a></li>
+                                    <li class="p-L-R-10 p-B-15 uppercase"><a class="light-gray" href="#">generi e mood</a></li>
+                                    <li class="p-L-R-10 p-B-15 uppercase"><a class="light-gray" href="#">nuove uscite</a></li>
+                                    <li class="p-L-R-10 p-B-15 uppercase"><a class="light-gray" href="#">scopri</a></li>
                                 </ul>
                             </div>
                         </section>
@@ -316,8 +315,8 @@
                                     <img class="block" src="./img/sinister.jpeg" alt="sinister">
                                 </div>
                                 <div class="p-L-R-20">
-                                    <p class="s-p-big bolder white">Sinister</p>
-                                    <p class="s-p">Brano nome</p>
+                                    <a href="#" class="s-p-big bolder white block">Sinister</a>
+                                    <p href="#" class="s-p">Brano nome</p>
                                 </div>
                             </div>
                             <div>
@@ -328,7 +327,7 @@
                         <div class="d-flex d-column j-center height-100 hover">
                             <div class="d-flex j-center">
                                 <div>
-                                    <a href="#"><i class="fa-solid fa-share p-L-R s-icon"></i></a>
+                                    <a href="#"><i class="fa-solid fa-shuffle p-L-R s-icon"></i></a>
                                 </div>
                                 <div>
                                     <a href="#"><i class="fa-solid fa-pause p-L-R s-icon"></i></a>

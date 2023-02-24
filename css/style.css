@@ -35,12 +35,114 @@
 body{
     color: var(--white);
 }
-a{
+
+/* hover effect */
+#container-right .btn:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+#container-right .btn:active{
+    scale: 0.98;
+    transform: translateY(2px);
+}
+
+#nav-menu ul li a{
+    transition: 0.2s;
+    position: relative;
+}
+#nav-menu ul li a::after{
+    content: "";
+    position: absolute;
+    left: calc(50% - 20px);
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: var(--light-green);
+    transition: 0.2s;
+}
+#nav-menu ul li a:hover::after{
+    width: 40px;
+}
+#nav-menu ul li a:hover{
+    color: white;
+}
+#home a{
+    position: relative;
+    transition: 0.2s;
+}
+#home a:hover{
     color: var(--white);
 }
-a:hover{
-    color: var(--light-green);
+#home a::after{
+    content: "";
+    position: absolute;
+    left: -45px;
+    bottom: -3px;
+    width: 2px;
+    height: 0;
+    background-color: var(--light-green);
+    transition: 0.2s;
 }
+#home a:hover::after{
+    height: 25px;
+}
+#play-list a{
+    transition: 0.2s;
+}
+#play-list ul li:hover a{
+    color: var(--white);
+}
+#play-list .play:hover a{
+    color: var(--white);
+}
+#play-list .play:hover .cube{
+    background-color: var(--white);
+}
+
+.left-bottom a{
+    transition: 0.2s;
+}
+.left-bottom .download:hover a{
+    color: var(--white);
+}
+.left-bottom .profile:hover a{
+    color: var(--gray-cube);
+}
+
+
+#col-play-bar p{
+    transition: 0.2s;
+}
+#col-play-bar p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--white);
+}
+#col-play-bar .fa-regular, .fa-solid{
+    transition: all .2s ease-in-out;
+}
+#col-play-bar .fa-heart:hover{
+    color: rgb(255, 59, 59); 
+}
+#col-play-bar .fa-regular:hover:not(.fa-heart, .fa-circle-play),
+.fa-solid:hover:not(.fa-heart, .fa-circle-play) {
+    text-shadow: 0 0 4px var(--white);
+}
+#col-play-bar .fa-circle-play{
+    transition: all 0.1s;
+}
+#col-play-bar .fa-circle-play:hover{
+    transform: scale(0.98);
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -107,7 +209,8 @@ main #container-left ul li{
 main #container-left .cube{
     width: 40px;
     height: 40px;
-    background-color: var(--gray-cube);  
+    transition: 0.3s;
+      
 }
 
 
@@ -299,6 +402,9 @@ main #container-right .row-fix{
 .bg-light-gray{
     background-color: var(--light-gray);
 }
+.bg-gray-cube{
+    background-color: var(--gray-cube);
+}
 
 
 .light-gray{
@@ -313,6 +419,7 @@ main #container-right .row-fix{
 .black{
     color: var(--black);
 }
+
 
 
 /* text position settings */
@@ -366,6 +473,7 @@ main #container-right .row-fix{
     width: 220px;
     line-height: 40px;
     text-align: center;
+    transition: all .2s ease-in-out;
 }
 
 
